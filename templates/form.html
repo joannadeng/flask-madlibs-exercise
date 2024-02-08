@@ -2,6 +2,7 @@
 {% block title %}story form{% endblock %}
 {% block content%}
     <main>
+        <h1>Madlibs</h1>
         <form action="/new_story" method="POST">
             {% for word in form_prompt_words %}
             <div>

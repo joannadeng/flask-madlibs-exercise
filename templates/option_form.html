@@ -1,14 +1,16 @@
 {% extends "base.html" %}
 {% block title %}story form{% endblock %}
 {% block content%}
-<form action=“/storyA” method="POST">
+<form action="/storyAll" method="POST">
     <label for="story-templates">select a story template</label>
     <select name="templates" id="story-templates">
         <option value="">--please choose a story template</option>
-        <option value="/storyA">Story A</option>
-        <option value="/storyB">Story B</option>
-        <option value="/storyC">Story C</option>
-        <option value="/storyD">Story D</option>
+        <option value="/storyA">storyA</option>
+        <option value="/storyB">storyB</option>
+        <option value="/storyC">storyC</option>
+        <option value="/storyD">storyD</option>
+        
     </select>
+    <button>submit</button>
 </form>
 {% endblock %}
